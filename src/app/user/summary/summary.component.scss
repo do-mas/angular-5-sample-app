@@ -1,0 +1,58 @@
+.reward-container {
+    margin: 1em;
+}
+
+h2 {
+    margin-top: 0.1em;
+}
+
+.reward-amount {
+    font-size: 2em;
+}
+
+.card-title {
+    font-weight: 400;
+}
+
+.card-text {
+    margin-top: 1em;
+    margin-bottom: 1em !important;
+    padding-left: 5%;
+}
+
+.status-circle {
+    margin-top: 5vh;
+}
+
+.reword-total-row {
+    margin-bottom: 2em;
+}
+
+.status-circle-sm {
+    width: 10em;
+}
+
+.circle-container {
+    text-align: center !important;
+    width: 20em;
+}
+
+@media(max-width: 768px) {
+    .circle-container {
+        width: 100%;
+    }
+    .title {
+        margin-left: 0em !important;
+    }
+    .stars {
+        margin-bottom: 1.5em;
+    }
+}
+
+.title {
+    margin-left: 4em;
+}
+
+.stars {
+    margin-top: -1.2em;
+}

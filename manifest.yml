@@ -1,0 +1,6 @@
+---
+applications:
+- name: nmeer_ui
+  memory: 1024M
+  instances: 1
+  path: dist

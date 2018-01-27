@@ -1,0 +1,32 @@
+<h4 class="title"> Tasks ({{allCount}}) <b></b></h4>
+<div class="btn-group-center-sm">
+    <div class="btn-group btn-group-rounded">
+        <button class='btn' (click)="filter('ready')" [ngClass]="{'btn-success':showStatus==='ready'}">Ready
+            ({{readyCount}})
+        </button>
+        <button class='btn' (click)="filter('in-progress')" [ngClass]="{'btn-success':showStatus==='in-progress'}">In
+            Progress
+            ({{inProgressCount}})
+        </button>
+        <button class='btn' (click)="filter('done')" [ngClass]="{'btn-success':showStatus==='done'}">Done
+            ({{doneCount}})
+        </button>
+    </div>
+</div>
+<div class="row">
+    <div *ngFor="let task of tasks" class="promo-container col-lg-3 col-md-4 col-sm-12">
+        <div href="" class="card">
+            <div class="card-img">
+            </div>
+            <div class="card-block">
+                <div class="card-text">
+                    <div class="col-xs-12 text-center"><h5><b>{{task.title}}</b></h5></div>
+                    <div class="col-xs-12 text-center"><h5><b>{{task.status}}</b></h5></div>
+                    <div class="col-xs-12 text-center"><h5><b>{{task.size}}</b></h5></div>
+                    <div class="col-xs-12 text-center">{{task.description}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
